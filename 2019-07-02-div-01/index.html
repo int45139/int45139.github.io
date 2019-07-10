@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div-01</title>
+<style>
+    #all{
+        width:600px;
+        height:800px;
+        background-color: brown;
+    }
+    #header{
+        width:600px;
+        height:100px;
+        background-color: blue;
+    }
+    #main{
+        width:600px;
+        height:600px;
+        background-color: burlywood;
+    }
+    #footer{
+        width:600px;
+        height:100px;
+        background-color: black;
+    }
+    #mainL{
+        width:200px;
+        height:600px;
+        background-color:chartreuse;
+        float: left;
+    } 
+    #mainR{
+        width:400px;
+        height:600px;
+        background-color:orange;
+        float: left;
+    }
+    #mainR-up{
+        width:400px;
+        height:200px;
+        background-color:black;
+        float: right;
+    }
+    #mainR-mid{
+        width:400px;
+        height:200px;
+        background-color:purple;
+        float: right;
+    }
+    #mainR-htm{
+        width:400px;
+        height:200px;
+        background-color:saddlebrown;
+        float: right;
+    }
+    #mainR-01{
+        width:130px;
+        height:200px;
+        background-color:salmon;
+    }
+    #mainR-02{
+        width:180px;
+        height:200px;
+        background-color:slategrey;
+    }
+    #mainR-03{
+        width:250px;
+        height:200px;
+        background-color:teal;
+    }
+</style>
+</head>
+<body>
+<div id="all">
+    <div id="header"></div>
+    <div id="main">
+        <div id="mainL"></div>
+        <div id="mainR">
+            <div id="mainR-up">
+            <div id="mainR-01"></div>    
+            </div>
+            <div id="mainR-mid">
+                <div id="mainR-02"></div>
+            </div>
+            <div id="mainR-htm">
+                <div id="mainR-03"></div>
+            </div>
+        </div>
+    </div>
+    <div id="fotter"></div>
+</div>
+</body>
+</html>
