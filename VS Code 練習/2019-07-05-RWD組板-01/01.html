@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01</title>
+    <style>
+        .block{
+            widows: 450px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .block h1{
+            opacity: 0;
+            transition-delay: 1s;
+            transition-duration: 0.5s;
+        }
+        .block h1 p{
+            opacity: 0;
+            transition-delay: 1s;
+            transition-duration: 0.5s;
+        }
+        .block h1:hover, .block p:hover{
+            opacity: 1;
+        }
+      
+    </style>
+</head>
+<body>
+     <div class="block">
+         <h1>我是標題 </h1>
+         <p>我是內文</p>
+     </div>
+</body>
+</html>

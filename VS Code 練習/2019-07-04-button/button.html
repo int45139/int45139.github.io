@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: gray;
+        }
+        #all{
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 300vh;
+            background-color: bisque
+        }
+        #Logo{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            float:left;
+        }
+        ul{
+            width: 70px;
+            height: 20px;
+            background-color: blueviolet;
+            margin: 0;
+            float: right;
+        }
+        li{
+            width: 20px;
+            height: 20px;
+            background-color:green;
+            float: left;
+        }
+        #box{
+            width: 100%;
+            height: calc(100vh - 50vh);
+            background-color: blue;
+            margin: auto;
+            padding-top: 50vh;
+            background-image: url(/img/1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #boxA{
+            width: 100%;
+            height: calc(50vh - 25vh);
+            background-color: red;
+            padding-top: calc(25vh + 12px);  
+        }
+        #boxA1{
+            width: 175px;
+            height: 24px;
+            background-color: goldenrod;
+            margin: auto;
+        }
+        #box1{
+            width: 100%;
+            height: calc(100vh - 50vh);
+            background-color: blue;
+            margin: auto;
+            padding-top: 50vh;
+            background-image: url(/img/2.jpg);
+        }
+        #boxB{
+            width: 100%;
+            height: calc(50vh - 25vh);
+            background-color: red; 
+            padding-top: calc(50vh - 25vh); 
+        }
+        #boxB1{
+            width: 175px;
+            height: 24px;
+            background-color: goldenrod;
+            margin: auto;
+        }
+        #box2{
+            width: 100%;
+            height: calc(100vh - 50vh);
+            background-color: blue;
+            margin: auto;
+            padding-top: 50vh;
+            background-image: url(/img/3.jpg);
+        }
+        #boxC{
+            width: 100%;
+            height: calc(50vh - 25vh);
+            background-color: red; 
+            padding-top: calc(50vh - 0); 
+        }
+        #boxC1{
+            width: 175px;
+            height: 24px;
+            background-color: goldenrod;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="Logo"></div>
+        <ul>
+            <li><a href="box"></a>A
+                <div id="Btn1"></div>
+            </li>
+            <li><a href="box1"></a>B
+            </li>
+            <li><a href="box2"></a>C</li>
+        </ul>
+    <div id="box">
+        <div id="boxA">
+            <div id="boxA1"></div>
+        </div>
+    </div>
+    <div id="box1">
+            <div id="boxB">
+                <div id="boxB1"></div>
+            </div>
+        </div>
+    <div id="box2">
+            <div id="boxC">
+                <div id="boxC1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

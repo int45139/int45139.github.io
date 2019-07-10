@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div-01</title>
+<style>
+    #body{
+        background-color: aqua;
+    }
+    #all{
+        width:80%;
+        height:400px;
+        background-color: brown;
+        padding-top:10px;
+        padding-left:10px
+    }
+    #BoxA{
+        width:calc(33% - 10px);
+        height:390px;
+        background-color: blue;
+        float:left;
+        margin-right:10px;
+    }
+    #BoxB{
+        width:calc(34% - 10px);
+        height:390px;
+        background-color:orange;
+        float:left;
+        margin-right:10px;
+    }
+    #BoxC{
+        width:calc(33% - 10px);
+        height:390px;
+        background-color:green;
+        float:right;
+        margin-right:10px;
+    }
+</style>
+</head>
+<body>
+  <div id="all">
+      <div id="BoxA"></div>
+      <div id="BoxB"></div>
+      <div id="BoxC"></div>
+  </div>
+</body>
+</html>

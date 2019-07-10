@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>動畫1</title>
+    <style>
+        .block{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: brown;
+            position: absolute;
+            bottom: 0;
+        }
+        .box1{
+            left: 25px;
+            animation: iox;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-fill-mode:backwards;
+        }
+        .box2{
+            left: 125px;
+            animation-name: toy;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+
+        }
+        .box3{
+            left: 225px;
+            animation-name: bgp;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+
+        }
+        .box4{
+            left: 325px;
+        }
+        .box5{
+            left: 425px;
+        }
+        @keyframes iox{
+            0%{
+                bottom:0px;
+            }
+            25%{
+                bottom:55px;
+            }
+            75%{
+                bottom:85px;
+            }
+            
+        }
+        @keyframes toy{
+            0%{
+                bottom:0;
+            }
+            45%{
+                bottom:45px;
+
+            }
+            75%{
+                bottom: 75px;
+                transform: rotate(720deg) scale(2,2);
+            }
+        }
+        @keyframes bgp{
+            0%{
+                bottom:0;
+            }
+            45%{
+                bottom:45px;
+
+            }
+            75%{
+                bottom: 75px;
+                transform: skew(45,240);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div-01</title>
+<style>
+    #all{
+        width:calc(90% - 20px);
+        height:760px;
+        background-color: brown;
+        padding:10px;
+    }
+    #header{
+        width:calc(100% - 0px);
+        height:90px;
+        background-color: blue;
+        margin-bottom:10px;
+    }
+    #main{
+        width:calc(100% - 0px);
+        height:580px;
+        background-color: brown;
+        margin-bottom:10px;
+    }
+    #footer{
+        width:calc(100% - 0px);
+        height:70px;
+        background-color: aquamarine;
+    }
+    #mainL{
+        width:calc(35% - 10px);
+        height:580px;
+        background-color:orange;
+        float: left
+    }
+    #mainR{
+        width:calc(65% - 0px);
+        height:580px;
+        background-color:brown;
+        float:right;
+    }
+    #mainR-up{
+        width:100%;
+        height:186px;
+        background-color:rgb(77, 16, 16);
+        float:right;
+        margin-bottom:10px;
+    }
+    #mainR-mid{
+        width:100%;
+        height:186px;
+        background-color:brown;
+        float:right;
+        margin-bottom:10px;
+    }
+    #mainR-htm{
+        width:100%;
+        height:186px;
+        background-color:brown;
+        float:right;
+    }
+    #mainR-1{
+        width:calc(30% - 10px);
+        height:186px;
+        background-color:chartreuse;
+        float:left;
+        margin-right:10px; 
+    }
+    #mainR-01{
+        width:calc(70% - 0px);
+        height:186px;
+        background-color:coral;
+        float:right;
+    }
+    #mainR-2{
+        width:calc(40% - 10px);
+        height:186px;
+        background-color:cadetblue;
+        float:left;
+        margin-bottom:10px;
+    }
+    #mainR-02{
+        width:calc(60% - 0px);
+        height:186px;
+        background-color:crimson;
+        float: right;
+    }
+    #mainR-3{
+        width:calc(60% - 10px);
+        height:186px;
+        background-color:cornflowerblue;
+        float:left;
+        margin-right:10px;
+    }
+    #mainR-03{
+        width:calc(40% - 0px);
+        height:186px;
+        background-color:darkgreen;
+        float: right;
+    }
+</style>
+</head>
+<body>
+<div id="all">
+    <div id="header"></div>
+    <div id="main">
+        <div id="mainL"></div>
+        <div id="mainR">
+            <div id="mainR-up">
+                <div id="mainR-1"></div>
+                <div id="mainR-01"></div>
+            </div>
+            <div id="mainR-mid">
+                <div id="mainR-2"></div>
+                <div id="mainR-02"></div>
+            </div>
+            <div id="mainR-htm">
+                <div id="mainR-3"></div>
+                <div id="mainR-03"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

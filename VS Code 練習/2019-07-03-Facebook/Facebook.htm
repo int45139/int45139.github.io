@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #bluebar{
+            width: 100%;
+            height: 45px;
+            background-color: blue;
+        }
+        #timeline{
+            width: 70%;
+            height: 360px;
+            background-color: gray;
+            margin-left:auto;
+            margin-right:auto;
+            position: relative;
+        }
+        #cover{
+            width: 100%;
+            min-width: 60%;
+            height: 315px;
+            background-color: green;
+            margin:auto;
+            background-image: url(/pic/cover.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #menu{
+            width: 100%;
+            height: 45px;
+            background-color: aquamarine;
+            margin:auto;
+        }
+        #avatar{
+            width: 156px;
+            height: 156px;
+            border-radius: 100px;
+            border: 4px solid wheat;
+            background-color: brown;
+            position: absolute;
+            left: 20px;
+            bottom:20px;
+            background-image: url(/pic/avatar.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #aria{
+            width: 100px;
+            height: 26px;
+            background-color:hotpink;
+            position: absolute;
+            right:20px;
+            bottom:65px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bluebar"></div>
+    <div id="timeline">
+        <div id="cover"></div>
+        <div id="menu"></div>
+        <div id="avatar"></div>
+        <div id="aria"></div>
+    </div>
+</body>
+</html>
