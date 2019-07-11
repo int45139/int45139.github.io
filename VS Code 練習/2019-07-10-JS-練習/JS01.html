@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .title{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Hello</h1>
+    <button onclick ="button_click()">改變文字</button>
+
+    <script>
+        function button_click(){
+        var first_title = document.querySelector("#title");
+        // 宣告1個變數first_title，將找到的Element放入
+        // first_title.textContent="Hello world";
+        // 改變first_title的props(屬性)[textContent]為Hello world!
+        first_title.textContent = "Hello 23456";
+        console.log("#title");
+    }
+    </script>
+</body>
+</html>
