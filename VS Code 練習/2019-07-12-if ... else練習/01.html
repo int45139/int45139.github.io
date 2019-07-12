@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .title {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Hello</h1>
+    <button onclick="button_click()">改變文字</button>
+
+    <script>
+        //按鈕按下後會發生的函式
+        function button_click() {
+
+            //選擇到first_title
+            var first_title = document.querySelector("#title");
+            // first_title.textContent = "Hello 23456";
+
+            //現在的文字
+            var money = first_title.textContent;
+            money.textContent = "Hello 23456";
+            
+            // 判斷裡面的文字，如果是"Hello" 改為 "Hello Hello" , 否則 改為"Hello"
+
+            if (money == "Hello") {
+                //first_title的內容改為 "Hello Hello"
+                first_title.textContent = "Hello Hello";
+                console.log(money);
+            } else {
+                  //first_title的內容改為 "Hello"
+                first_title.textContent ='Hello';
+            }
+
+        }
+    </script>
+</body>
+
+</html>
