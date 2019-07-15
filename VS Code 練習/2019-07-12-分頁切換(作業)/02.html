@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分頁切換</title>
+</head>
+    <style>
+        .tabs{
+            max-width: 600px;
+        }
+        .tab_btn_group{
+            display: flex;
+        }
+        .tab_btn{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: cadetblue;
+        }
+        .tab_region{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 10px;
+            background-color:darkcyan;
+        }
+        .show {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+        .tab_btn:hover{
+            background-color:lightgreen;
+        }
+    </style>
+<body>
+    <div class="tabs">
+        <ul class="tab_btn_group">
+            <div class="tab_btn">Types of</div>
+            <div class="tab_btn">Foraging</div>
+            <div class="tab_btn">lifestyle</div>
+        </ul>
+    </div>
+
+        <div class="tab_region">
+            <div class="tab_content show">
+                <h1>Types of content</h1>
+                content Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, suscipit. Quibusdam, sit. Hic obcaecati excepturi voluptas nemo incidunt quia itaque ratione quaerat, labore ad? Fuga cupiditate praesentium laudantium quos! Laudantium!
+            </div>
+            <div class="tab_content hidden">
+                <h1>Foraging content</h1>
+            </div>
+            <div class="tab_content hidden">
+                <h1>lifestyle content</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var tab_btn_1 = document.querySelector("#tab_btn_1");
+        // var tab_btn_2 = document.querySelector("#tab_btn_2");
+        // var tab_btn_3 = document.querySelector("#tab_btn_3");
+        // var tab_content_1 = document.querySelector("#tab_content_1");
+        // var tab_content_2 = document.querySelector("#tab_content_2");
+        // var tab_content_3 = document.querySelector("#tab_content_3");
+
+        var tab_btn_ary = document.querySelectorAll(".tab_btn")
+        var tab_content_ary = document.querySelectorAll(".tab_content")
+  
+        
+
+        for (let index = 0; index < tab_btn_ary.length; index++) {
+            const tab_btn = tab_btn_ary[index];
+            const tab_content = tab_content_ary[index];
+
+            console.log(tab_btn_ary)
+            console.log(tab_content_ary)
+
+            tab_btn.onclick = function(){
+                hidden_all();
+
+                tab_content.classList.remove("hidden");
+                tab_content.classList.add("show");
+                
+            }
+        }
+        function hidden_all() {
+            for (let index = 0; index < tab_content_ary.length; index++) {
+                const tab_content = tab_content_ary[index];
+
+                tab_content.classList.remove("show");
+                tab_content.classList.add("hidden");
+            }
+        }
+       
+        // //按鍵事件
+        // tab_btn_1.onclick = function () {
+        //     //按鈕按下去後要隱藏所有人
+        //     hidden_all();
+
+        //     //再顯示特定的分頁(1)
+        //     tab_content_1.classList.remove("hidden");
+        //     tab_content_1.classList.add("show");
+        // }
+
+        // tab_btn_2.onclick = function () {
+        //     //按鈕按下去後要隱藏所有人
+        //     hidden_all();
+
+        //     //再顯示特定的分頁(2)
+        //     tab_content_2.classList.remove("hidden");
+        //     tab_content_2.classList.add("show");
+        // }
+
+        // tab_btn_3.onclick = function () {
+        //     //按鈕按下去後要隱藏所有人
+        //     hidden_all();
+
+        //     //再顯示特定的分頁(3)
+        //     tab_content_3.classList.remove("hidden");
+        //     tab_content_3.classList.add("show");
+        // }
+
+        // function hidden_all() {
+        //     tab_content_1.classList.remove("show");
+        //     tab_content_2.classList.remove("show");
+        //     tab_content_3.classList.remove("show");
+        //     tab_content_1.classList.add("hidden");
+        //     tab_content_2.classList.add("hidden");
+        //     tab_content_3.classList.add("hidden");
+        // }
+    </script>
+</body>
+</html>

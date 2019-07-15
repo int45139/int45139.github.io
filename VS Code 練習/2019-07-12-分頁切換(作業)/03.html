@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object 練習</title>
+    <style>
+        .card{
+            width: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="top_section">
+            <img id="top_section_image" src="" alt="">
+        </div>
+        <div class="bottom_section">
+            <h1>HTML5 Java Script</h1>
+        <h3><p id="bottom_text"></p></h3>
+        </div>
+
+    </div>
+
+    <script>
+        var book = {
+            image:"https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/83/e258e0532611e5a5072321239ff4d4/jhep-coursera-course4.png?auto=format%2Ccompress&dpr=2.625" ,
+            title:"HTML5 Java Script" ,
+            Author:"Chris Sells ,Brandon Satrom" ,
+            Publishing:"上奇資訊" ,
+            weight:400 ,
+            date:"2018/02"
+        };
+        var top_section_image = document.querySelector("#top_section_image")
+        var bottom_section = document.querySelector(".bottom_section")
+        var bottom_text
+
+    </script>
+</body>
+</html>
