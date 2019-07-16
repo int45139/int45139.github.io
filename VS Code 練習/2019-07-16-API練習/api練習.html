@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .card{
+        Width: 300px;
+        Height: 550px;
+        color: #fff;
+      }
+      .card__header{
+        background-color: #56CCF2;
+      }
+      .grassland{
+        background-color: #a8e063;
+      }
+      .sun{
+        background-color: #f7b733;
+      }  
+      .nightMode{
+        background-color: #f46b45;
+      }
+     
+    
+    </style>
+</head>
+<body>
+    <div class="card">
+        <input type="checkbox" id="nightMode">
+      <div class="card_header">
+        <span class="city">Nantou</span>
+        <span class="temperature">34°</span>
+        <span class="status">Clear</span>
+      </div>
+      <div class="card__clear">
+        <div class="sun"></div>
+        <div class="stars">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="grassland"></div>
+        <div class="grassland"></div>
+    </div>
+  </div>
+  <div class="card__detail">
+    <div class="forecast"><span>Today</span><span>Clear</span>
+      <span>34°</span>
+    </div>
+    <div class="forecast"><span>Tomorrow</span><span>Rainy</span>
+      <span>14°</span>
+    </div>
+        <label for="nightMode">Switch to night mode</label>
+        <label for="nightMode" class="show">Switch to morning mode</label>
+
+  </div>
+  <script>
+        fetch('https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-D0047-091?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        var location = myJson.cwbopendata.dataset.locations.location
+        var temp = location[6].weatherElement[0].time[0].elementValue
+        var rain = location[6].weatherElement[9].time[0]
+        var Rays = location[6].weatherElement[13].time
+          console.log(temp);
+      
+      });
+  </script>
+</body>
+</html>
