@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分頁切換</title>
+</head>
+    <style>
+        .tabs{
+            max-width: 600px;
+        }
+        .tab_btn_group{
+            display: flex;
+        }
+        .tab_btn{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .tab_region{
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 10px;
+        }
+        .show {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+<body>
+    <div class="tabs">
+        <ul class="tab_btn_group">
+            <div class="tab_btn" data-tabid="1">Tab1</div>
+            <div class="tab_btn" data-tabid="2">Tab2</div>
+            <div class="tab_btn" data-tabid="3">Tab3</div>
+        </ul>
+    </div>
+
+        <div class="tab_region">
+            <div class="tab_content show" data-tabid="1">
+                <h1>Tab1 content</h1>
+                content Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, suscipit. Quibusdam, sit. Hic obcaecati excepturi voluptas nemo incidunt quia itaque ratione quaerat, labore ad? Fuga cupiditate praesentium laudantium quos! Laudantium!
+            </div>
+            <div class="tab_content" data-tabid="2">
+                <h1>Tab2 content 123</h1>
+            </div>
+            <div class="tab_content" data-tabid="3">
+                <h1>Tab3 content 4456</h1>
+            </div>
+        </div>
+    </div>
+    <script src="/jquery.js"></script>
+    <script>
+          $(".tab_btn").click(function(){
+            var tabid=this.dataset.tabid;
+            $(".tab_content").removeClass("show");
+            $(".tab_content[data-tabid="+tabid+"]").addClass("show");
+        });
+    </script>
+</body>
+</html>
