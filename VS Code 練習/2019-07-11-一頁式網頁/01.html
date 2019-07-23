@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>網頁切版練習</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>     
         * {
             box-sizing: border-box;
@@ -48,7 +51,7 @@
             background-color: aquamarine;
             
         }
-        #navbar-chenge a .nav_link-to:hover{
+        #navbar-chenge .nav_link:hover{
             background-color:mediumaquamarine;
         }
         .clearfix {
@@ -64,7 +67,7 @@
             font-size: 25px;
             margin: 0;
         }
-        #region1 .square1{
+        #region1 #square1{
             width: 49.4%;
             height: 445px;
             background-color: cadetblue;
@@ -73,7 +76,7 @@
             padding: 2.5px;
             
         }
-        #region1 .square2{
+        #region1 #square2{
             width: 49.4%;
             height: 445px;
             background-color:cornflowerblue;
@@ -139,15 +142,16 @@
         <!-- 主要選單+position:sticky -->
         <nav id="navbar-chenge">
             <div class="cover">
-                <a class="nav_link1" href="#square1">何謂"宇宙"</a>
-                <a class="nav_link2" href="#square2">太空遊客</a>
-                <a class="nav_link3" href="#region2">可行性</a>
-                <a class="nav_link4" href="#region4">認識輻射</a>
+                <a class="nav_link" href="#square1">何謂"宇宙"</a>
+                <a class="nav_link" href="#square2">太空遊客</a>
+                <a class="nav_link" href="#region2">可行性</a>
+                <a class="nav_link" href="#region4">認識輻射</a>
                 <div class="clearfix"></div>
             </div>
         </nav>
         <section id="region1">
-            <div class="title"><h2>宇宙旅行</h2></div>
+            <div class="title" data-aos="fade-up"
+            data-aos-duration="2000"><h2>宇宙旅行</h2></div>
             <div id="square1">
                 <h1>何謂 " 宇宙 "</h1>
                 <h3><p>宇宙是所有時間、空間與其包含的內容物所構成的統一體；它包含了行星、恆星、星系、星系際空間、次原子粒子以及所有的物質與能量，宇指空間，宙指時間。</p>
@@ -160,13 +164,14 @@
             </div>
         </section>
         <section id="region2">
-            <div id="title"><h1>宇宙旅行是可行的嗎？</h1></div>
+            <div id="title" ><h1>宇宙旅行是可行的嗎？</h1></div>
             <h3><p>答案是肯定的，只是需要大量的時間、資金，來研究開發。</p>
                 在日本有一個不錯的 idea，叫做「宇宙電梯」。宇宙電梯的原理是將爬梯的交通工具將沿著連接宇宙空間與地面的纜繩升降。也就是在克服重力和離心力的影響下，搭載人和貨物的爬梯（電梯）借助纜繩，往返於地球與宇宙之間。從地面抵達3.6萬km靜止軌道上的空間站大約需要1週時間。爬梯的升降速度與新幹線同等，設想利用電能驅動。
                 它有下列幾項優點：①物美價廉的宇宙運輸方式，替代一次發射耗資約100億日元的火箭；②抑制溫室氣體的排放量。</h3>
         </div>
         <section id="region3">
-            <div class="title"><h3><p>在外太空旅行是人們所嚮往的，但其中又包括多少危險呢？</p></h3></div>   
+            <div class="title" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"><h3><p>在外太空旅行是人們所嚮往的，但其中又包括多少危險呢？</p></h3></div>   
                 <p>宇宙中充滿著許多危險，例如：流星、高溫、失重、宇宙射線 …… 等。只要有一點疏失，都會釀成災禍。</p>
                 <p>飛船在太空飛行，會碰到流星。流星是太空中的流浪漢，它們跌落到地球的大氣層里 就變成一道劃破長空的閃光。流星在太空中飛行的速度很快，所以一顆很小很小的流星，就可以打穿幾毫米厚的鋁板。
                     飛船碰上流星的機會比較少。如果碰上流星也不要緊，因為宇宙飛船有個非常牢固的外殼，裡面還有兩個密封艙，打穿了一個，可以躲到另一個艙里去修好隔壁的艙。將來在飛船上還可以將上雷射器，用它一照，就能把流星燒成灰。</p>
@@ -175,7 +180,8 @@
                     1986年1月28日是人類航天史上的黑色日。這一天，美國的」挑戰者號「太空梭在全世界的注視下起飛了。可誰知，僅過了72秒，上升中的」挑戰者號「突然爆炸，變成了一團耀眼的火球，然後墜入了大西洋。
         </section>
         <section id="region4">
-            <div id="title"><h3>認識輻射</h3></div>
+            <div id="title" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"><h3>認識輻射</h3></div>
             <p>輻射是能量以波或是次原子粒子移動的型態，在真空或介質中傳送。依其能量的高低及游離物質的能力分類為游離輻射和非游離輻射。 </p>
             <p>輻射不只存在於我們的生活環境之中，就連我們所認知的浩瀚宇宙也有，例如：太陽，太陽距離地球大概1.5億公里的距離，而地球周圍每秒穿過每平方厘米的太陽粒子就有幾千萬個。
                 太陽源源不斷的發射高能帶電離子流，這種射線對DNA非常不利，太陽黑子經常突然爆發，不定時的向宇宙中拋出這些突如其來的炮彈，儘管我們離太陽很遠，但他們是以光速前進的，所以射線威力並不會減弱。</p>
@@ -191,7 +197,13 @@
             回到最上
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+
+        AOS.init();   
+
         $(window).scroll(function () {
             //捲動過的高度
             var scrollTop = $(window).scrollTop();
