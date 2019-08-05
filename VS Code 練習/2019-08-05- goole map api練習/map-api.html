@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    style ARRAY {
+    [
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+            {
+                color: #193341
+            }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    color: #2c5a71
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    color: #29768a
+                },
+                {
+                    "lightness": -37
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    color: #406d80
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    color: #406d80
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    visibility: "on"
+                },
+                {
+                    "color": "#3e606f"
+                },
+                {
+                    "weight": 2
+                },
+                {
+                    "gamma": 0.84
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    color: #ffffff
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    weight: 0.6
+                },
+                {
+                    "color": #1a3541
+                }
+            ]
+        },
+        {
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    visibility: "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    color: #2c5a71
+                }
+            ]
+        }
+    ]
+    }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// 初始化 and add the map
+function initMap() {
+  // 設定Uluru的位置
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, 以Uluru為地圖中心
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // 將該標記放在Uluru上
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!-- 從指定的URL加載API
+    * async屬性允許瀏覽器在API加載時呈現頁面
+    * key參數將包含您自己的API密鑰（本教程不需要）
+    * callback參數執行initMap（）函數
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAewqTlA2lMjzPRrZkPT4NoMlBWvPY220&callback=initMap">
+    </script>
+  </body>
+</html>
