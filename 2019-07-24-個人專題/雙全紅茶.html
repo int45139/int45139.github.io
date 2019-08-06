@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>雙全紅茶</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: #eee; */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav.navbar {
+            background-color: skyblue;
+        }
+
+        nav.navbar .navbar-brand {
+            width: 90px;
+            height: 40px;
+            background-color: purple;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li.nav-item a.nav-link {
+            color: white;
+
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        main#main-cheer {
+            width: 100%;
+        }
+
+        #Section1 {
+            width: 100%;
+            /* float: left; */
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        #Section1 #region1 {
+            width: 100%;
+            /* height: 450px; */
+            background-color: cornflowerblue;
+            /* float: left; */
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section1 #region1 img {
+            width: 50%;
+            height: 371px;
+        }
+
+        #Section1 #region1 .csooc {
+            float: right;
+            width: 50%;
+            padding: 10px;
+        }
+
+        #Section1 #region1 .csooc button {
+            background-color: lightgreen;
+            float: right;
+            color: chocolate;
+        }
+
+        #Section1 #region2 {
+            width: 100%;
+            background-color: cornflowerblue;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section1 #region2 img {
+            width: 100%;
+        }
+
+        #Section1 #region2 .fog {
+            font-size: 25px;
+        }
+
+        #Section1 #liso {
+            width: 100%;
+            display: none;
+        }
+
+        .bgo {
+            display: block !important;
+        }
+
+        #Section2 {
+            width: 100%;
+            background-color: darkcyan;
+            /* float: left; */
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section2 img {
+            width: 25%;
+        }
+
+        #Section2 .box {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #Section2 .ttp {
+            float: right;
+            width: 50%;
+            padding: 5px;
+        }
+
+        #Section3 {
+            width: 100%;
+            background-color: darkgoldenrod;
+            /* float: left; */
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section3 img {
+            width: 100%;
+        }
+
+        #Section4 {
+            width: 100%;
+            background-color: indianred;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section4 .force {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #Section4 img {
+            width: 50%;
+        }
+
+        #Section4 .block1 {
+            width: 50%;
+            float: left;
+
+        }
+
+        #Section4 .block2 {
+            width: 50%;
+            float: right;
+        }
+
+        #Section4 .block3 {
+            width: 100%;
+        }
+
+        #Section4 .block4 {
+            width: 50%;
+            float: left;
+        }
+
+        #Section4 .block5 {
+            width: 50%;
+            float: right;
+        }
+
+        #Section4 .block6 {
+            width: 50%;
+            float: left;
+        }
+
+        #Section4 .block7 {
+            width: 50%;
+            float: right;
+        }
+
+        #Section5 {
+            width: 100%;
+            background-color: lightgray;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #Section5 .block8 {
+            width: 35%;
+            float: left;
+        }
+
+        #Section5 .block9 {
+            width: 65%;
+            /* float: right; */
+            display: flex;
+
+        }
+
+        #Section5 .block9 .coco {
+            width: 100%;
+        }
+
+        #Section5 .block9 iframe {
+            width: 100%;
+            height: 348px;
+            margin: auto 0px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: sienna;
+            color: whitesmoke;
+            text-align: center;
+            padding: 75px;
+        }
+
+        footer .botch1 h4 {
+            display: inline;
+        }
+
+        footer .botch2 h4 {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+        <div class="navbar-brand">雙全紅茶</div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#region1">關於雙全</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#region2">雙全故事</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Section2">產品介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Section3">認識紅茶伯</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Section4">紅茶詩</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Section5">聯絡我們</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="banner-img" src="pic/01.jpg"></div>
+                <div class="swiper-slide"><img class="banner-img" src="pic/04.jpg"></div>
+                <div class="swiper-slide"><img class="banner-img" src="pic/08.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    <main id="main-cheer">
+        <div class="container">
+            <section id="Section1">
+                <div id="region1">
+                    <img src="pic/001.gif">
+                    <div class="csooc">
+                        <h1>關於雙全</h1>
+                        <h3>創辦人</h3>
+                        <div class="liss">
+                            <p>張番薯先生</p>
+                        </div>
+                        <p>日據時代，張番薯先生是在日本人開設的居酒屋擔任調酒師。光復後，老闆返回日</p>
+                        <p>本，居酒屋因此停業。期間，他曾前往日本，打算繼續跟著老闆工作，老闆卻建議</p>
+                        <p>他留在台灣，好好發揮他一手調酒的好功夫。於是他重拾當年調酒用的器具，夫妻</p>
+                        倆在現今中正路131巷的巷口賣起當年獨一無二的「手搖現沖紅茶」～1949年
+
+                        <button>更多↓</button>
+                        <div id="liso">
+                            <p>
+                                <h3>雙全理念</h3>
+                            </p>
+                            雙全秉持著「堅持該堅持的；改進該改進的」為其經營原則，努力的走到今日。
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="region2">
+                    <h1>雙全故事</h1>
+                    <img src="pic/07.jpg">
+                    <div class="fog">
+                        <p>1980年【傳承】-張番薯先生年事漸高，打算退休，便把泡茶的功夫傳授給自家親戚許天旺先生。</p>
+                        <p>由於來喝茶的客人都是常客，對茶的要求十分嚴格。剛接下生意的許天旺戰戰兢兢，不敢絲毫馬虎</p>
+                        <p>。除了謹守傳統風味，更以品茶者的角度，不斷改進，力求泡出更美味的紅茶。於是，「死忠」的</p>
+                        <p>客人並沒有因為換老闆而離去，反而主動帶來更多第二代「死忠」茶友。</p>
+                        <p>1983年【轉機】-市府推展「美化大台南運動」時，規定路邊十公尺內不得有攤販。眼看老字號「</p>
+                        <p>巷口現沖紅茶」即將被迫歇業，許天旺心急如焚。所幸天無絕人之路，在131巷內覓得一間小小的</p>
+                        <p>店面，許天旺先生排除萬難將它買下，「巷口現沖紅茶」正式有了明亮潔淨的門面。</p>
+
+                        <p>1996年【蛻變】-當「泡沫紅茶」一詞在各地流行起來，許天旺先生意識到傳統風味的紅茶將有被</p>
+                        <p>「泡沫化」的危機，便著手拓展紅茶老店的經營模式。他將「巷口現沖紅茶」正式註冊為「雙全紅</p>
+                        <p>茶」，彰顯老店「周全、安全」的經營原則，並重新設計店面與紅茶包裝，提升品質與品管，堅持</p>
+                        <p>現沖原味，使老店紅茶的在多如過江之鯽的泡沫紅茶店中，獨樹一幟，許天旺先生「紅茶伯」的外</p>
+                        號不脛而走，吸引不少媒體前來採訪。
+                    </div>
+                </div>
+            </section>
+            <section id="Section2">
+                <h1>產品介紹</h1>
+                <div class="box">
+                    <img src="pic/03.jpg">
+                    <img src="pic/02.jpg">
+                    <div class="ttp">
+                        <p>杯裝$25、瓶裝$100</p>
+                        <p>選用白糖搭上仙女紅茶下去泡，喝起來略為的苦澀，又帶點麥香，入喉之後會回甘。</p>
+                        炎炎夏日，不彷來一杯紅茶，沁涼又解渴！
+                    </div>
+                </div>
+
+            </section>
+            <section id="Section3">
+                <h1>認識紅茶伯</h1>
+                <img src="pic/06.jpg">
+                <h4>
+                    <p>許天旺先生</p>
+                </h4>
+                <p>今年，適逢老爸七十大壽，想好好寫寫他，卻依然辭窮。因為他的偉大，在於他用自己一生的經歷教會我：一個人即使沒有頭銜，照樣可以偉大！淺薄如我，如何宣揚他這種</p>
+                <p>沒有名相的尊貴？記憶中印象最深刻的，是一家人圍著一鍋地瓜稀飯，等不到爸爸回家的那夜。他因為在路邊擺攤，連人帶攤子，被扣在警局裡......這是他一生中最引以為恥</p>
+                <p>，從不向別人提及的往事。然而，我永遠無法忘懷，那晚，他痛苦的臉和佝僂的背。我想，不只是朱自清的父親，天底下每一個爸爸，都有一個獨特的背影，只是有些子女沒</p>
+                <p>看到罷了。我很慶幸，那一次，我看到了，而且也看懂了－－原來，所謂的幸福，是因為他奮力的堵住了現實生活的千瘡百孔！</p>
+
+                <p>考上南師那年，老爸開心極了！客人說：「全仔，汝歹竹出好筍囉！」當時無知，不知此話是褒是貶，只是從那一天起，收攤回家的路上，他將我幫他推攤子的手輕輕拿開，</p>
+                <p>他說：「妳將來是個老師呢.....」</p>
+                <p>報到和住校的一切手續仍是老爸一手張羅，也許是稟承了他的特質，住家和學校就在同一條街上的我，偏偏最會想家，經常是打回家的電話才接通，便已嚎啕大哭起來。但也</p>
+                <p>往往淚痕未乾，老爸早已騎著那輛載過我們五個小鬼的腳踏車來啦！為此，教官打趣著恐嚇我，要把我派到阿里山上教書去，好磨練磨練。我當然知道這是玩笑，打從一進學</p>
+                <p>校唸書，我就特別用功，為的就是想留在台南任教，誰知，轉述這個玩笑居然讓老爸信以為真。結果是，兩個人在簡陋的旅店和蚊蟲奮戰了一晚，帶著痠疼的「關節」，無功</p>
+                <p>而返。</p>
+
+                <p>前些日子老爸自己「爆料」，說他們為我籌備婚事的那段日子，兩老總是失眠，夜裡坐在床上一起掉眼淚....啊！從結婚、生子到購屋、教養下一代，我根本就是老爸嫁不掉的</p>
+                <p>麻煩，如果真像別人所說的，女兒是父親前世的情人，那我要在這個同是父親節與情人節的八月告訴老爸：「我的過去您已全程參與，我的未來，又怎麼能沒有您呢？」～摘</p>
+                錄＜背影＞
+            </section>
+            <section id="Section4">
+                <h1>紅茶詩</h1>
+                <div class="force">
+                    <img src="pic/05.jpg">
+                    <div class="coss">
+                        <h4>緣由</h4>
+                        <p>每逢過年,客人最在意的莫過於──幾天不賣紅茶? 因為他們必須先知道紅茶伯會休息幾</p>
+                        <p>天，然後決定要囤積多少「存糧」. 聰明的紅茶伯發現: 與其一一通知客人,倒不如「張</p>
+                        <p>貼告示」來得有效。於是,每年年底， 紅茶伯的二女兒總會寫一首感性的台語詩， 由二</p>
+                        女婿用漂亮的書法寫在大紅紙上， 把紅茶伯:想對客人說的話，張貼出來…
+                    </div>
+                </div>
+                <h4>賞析</h4>
+                <div class="block1">
+                    <h4>
+                        【民國102年(蛇)紅茶詩】
+                    </h4>
+                    予我歡喜 予我相思
+                    <p>到底是魔術抑是嗎啡</p>
+                    橫直時間若到
+                    <p>無伊 就無元氣</p>
+                    彼款鹹的的甜
+                    <p>是巷仔內的內行滋味</p>
+                    共雙全漛乎滇
+                    <p>敬咱的未來佮過去</p>
+                    慢且乎乾
+                    <p>勻勻仔是</p>
+                    行過六十四
+                    <p>伊是紅色的傳奇</p>
+                </div>
+                <div class="block2">
+                    <h4>
+                        【民國95年-狗】
+                    </h4>
+                    水愛滾茶　才會笑
+                    <p>泡茶　勿會使滾笑</p>
+                    人客啊--
+                    <p>茶的心情佇時間內發酵</p>
+                    撙節的學問
+                    <p>著用數十冬的青春來換</p>
+                    店有老　料嘛有實
+                    <p>賣茶　著愛老實</p>
+                    人客啊—
+                    <p>好茶毋爾卜止喙凋</p>
+                    堅持傳統才會稠辟
+                    <p>雙全的心意　毋是小可</p>
+                </div>
+                <div class="block3">
+                    <h4>
+                        【民國92年-羊】
+                    </h4>
+                    紅茶的芳味　是美妙的歌詩　咻會落喉　講袂出喙
+                    <p>紅茶的芳味　是遙遠的記智　愈老愈好　攏袂退時</p>
+                    紅茶的芳味　是歷史的堅持　感情的生理　愈做愈甜
+                    <p>馬年冬尾　卜共汝定一個美麗的約會</p>
+                    初五來坐
+                    <p>汝的笑容是羊年早春上嫷的花</p>
+                </div>
+                <div class="block4">
+                    <h4>
+                        【民國90年-蛇】
+                    </h4>
+                    景氣無好逐家哀　　勤儉扑拼才應該
+                    <p>期待冬去春閣來　　英雄再展好氣概</p>
+                    雙全店面新氣派　　茶芳味純袂凊採
+                    <p>歇睏四日報汝知　　加減囤寡卡實在</p>
+                    初五開市好頭彩　　士農工商發大財
+                </div>
+                <div class="block5">
+                    <h4>
+                        【民國87年-虎】
+                    </h4>
+                    初一歇睏去拜拜　　初二歇睏請囝婿
+                    <p>初三歇睏樂開懷　　初四歇睏接神來</p>
+                    初五歇睏請期待　　初六開市好頭采
+                    <p>雙全祝恁大發財　　平安順利笑咍咍</p>
+                    一 一 一 一 一 一 一 一 一 一 一 一 一
+                </div>
+                <div class="block6">
+                    <p>
+                        <h4>
+                            【民國84年-豬】
+                        </h4>
+                    </p>
+                    一日無君天下亂　　一日無茶心頭煩
+                    <p>勸恁提早入幾罐　　毋驚無食喙乾空</p>
+                    初一歇睏連五工　　初六開市新希望
+                    <p>茶友相招來交觀　　人勇茶芳是雙全</p>
+                </div>
+                <div class="block7">
+                    <p>
+                        <h4>
+                            【民國83年-狗】
+                        </h4>
+                    </p>
+                    紅茶伯仔貼告示　　今年猶原老規矩
+                    <p>歇睏四日去拜年　　初五開市好時機</p>
+                    紅茶伯也有講起　　定來食茶會卡水
+                    <p>朋友相招鬥支持　　健康快樂笑瞇瞇</p>
+                </div>
+                <div style=" clear:both;"></div>
+            </section>
+            <section id="Section5">
+                <div class="block8">
+                    <h1>聯絡我們</h1>
+                    <p>
+                        <h4>電話：(06)228-8431</h4>
+                    </p>
+
+                    <p>
+                        <h4>傳真：(06)221-5703</h4>
+                    </p>
+                    <a class="btn-link"
+                        href="https://zh-tw.facebook.com/pages/%E9%9B%99%E5%85%A8%E7%B4%85%E8%8C%B6/124252360978683">
+                        <p>
+                            <h5>FB：雙全紅茶</h5>
+                        </p>
+                    </a>
+                    <h4>營業時間：</h4>
+                    <p>
+                        <h4>週一～週六 Am 11:00~Pm 6:00</h4>
+                    </p>
+                    <h4>週日休息</h4>
+                </div>
+                <div class="block9">
+                    <div class="coco">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.07369884596!2d120.19942725457688!3d22.99240344903246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76635b680887%3A0xae4d123ea04c04b1!2z6ZuZ5YWo57SF6Iy2!5e0!3m2!1szh-TW!2stw!4v1564641216224!5m2!1szh-TW!2stw"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h4>
+            <p>Copyright@2018 All Rights Reserved</p>
+        </h4>
+        <h5>
+            <p>地址：台南市中西區中正路131巷2號</p>
+        </h5>
+        <div class="botch1">
+            <h4>電話：(06)228-8431</h4>
+        </div>
+        <div class="botch2">
+            <p>
+                <h4>傳真：(06)221-5703</h4>
+            </p>
+        </div>
+        <h5>
+            營業時間：週一～週六 Am 11:00~Pm 6:00 週日休息
+        </h5>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#liso").toggleClass("bgo");
+            });
+            console.log(button);
+        });
+
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
